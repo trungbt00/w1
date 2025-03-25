@@ -1,0 +1,9 @@
+﻿.navbar .nav-link {
+	color: white;
+	transition: color 0.3s ease-in-out;
+}
+
+	.navbar .nav-link.active {
+		color: red !important; /* Mục menu đang chọn sẽ có màu đỏ */
+		font-weight: bold;
+	}
