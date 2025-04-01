@@ -11,7 +11,7 @@ const News = () => {
             .then((data) => {
                 const formattedData = data.items.map((item) => ({
                     id: item.id,
-                    date: new Date(item.publishDate).toISOString().split("T")[0], // Format lại ngày
+                    date: new Date(item.publishDate).toISOString().split("T")[0],
                     title: item.title,
                     image: item.imageRepresent,
                 }));
