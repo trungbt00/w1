@@ -1,1 +1,16 @@
-﻿
+﻿@media (max-width: 768px) {
+    /* Cho tablet */
+    .list-unstyled li > div > div { /* Container ảnh */
+        width: 60px !important;
+        height: 45px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Cho mobile */
+    .list-unstyled li > div > div {
+        width: 50px !important;
+        height: 38px !important;
+        marginLeft: '8px';
+    }
+}

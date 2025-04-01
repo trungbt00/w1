@@ -28,7 +28,7 @@ const Profile = () => {
                     </Nav>
                 </Col>
 
-                <Col md={9} className="p-4 border rounded bg-white">
+                <Col md={9} className="p-4 border rounded bg-white mx-auto">
                     <h3 className="text-center mb-4">Thông tin tài khoản</h3>
                     <hr />
                     <Form>

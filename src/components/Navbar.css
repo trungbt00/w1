@@ -7,3 +7,30 @@
 		color: red !important; /* Mục menu đang chọn sẽ có màu đỏ */
 		font-weight: bold;
 	}
+
+/* Làm nhỏ icon menu */
+.small-toggler {
+    padding: 5px 8px !important;
+    font-size: 16px !important;
+}
+
+/* Điều chỉnh menu dropdown */
+.small-menu .nav-link {
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* Thu gọn header trên mobile */
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding: 5px;
+    }
+    .small-toggler {
+        font-size: 14px !important;
+        padding: 4px 6px !important;
+    }
+    .small-menu .nav-link {
+        font-size: 13px;
+        padding: 6px;
+    }
+}

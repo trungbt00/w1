@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "./logo.svg";
+import logo from "./1.png";
 
 const Footer = () => {
     return (
@@ -9,10 +9,10 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md={4} className="d-flex align-items-start">
-                        <img src={logo} alt="Logo" width="110" className="me-2" />
+                        <img src={logo} alt="Logo" width="40" className="me-2" />
                         <div>
-                            <strong style={{ color: '#333192' }}>BỘ CÔNG AN</strong> <br />
-                            <strong style={{ color: '#333192' }}>CỤC CẢNH SÁT GIAO THÔNG</strong>
+                            <strong style={{ color: '#333192', fontSize: '0.9em' }}>BỘ CÔNG AN</strong> <br />
+                            <strong style={{ color: '#333192', fontSize: '0.9em' }}>CỤC CẢNH SÁT GIAO THÔNG</strong>
                         </div>
                     </Col>
 

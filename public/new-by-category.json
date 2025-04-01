@@ -1,0 +1,41 @@
+{
+  "totalCount": 2,
+  "items": [
+    {
+      "categoryName": "Tin tức",
+      "imageRepresent": "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/11/12/thiet-ke-chua-co-ten-1-1699753247696157879037.gif",
+      "title": "Sẽ có gần 290 nghìn biển số xe ô tô trong đợt đấu giá lần 2",
+      "viewCount": 0,
+      "publishDate": "2023-11-14T08:19:31.8738784+07:00",
+      "authorName": null,
+      "status": false,
+      "categoriesIds": [ "3ebe84fe-5c7f-1289-21a0-3a0b360f757d" ],
+      "description": "SKĐS - Trong phiên đấu giá biển số xe ô tô lần 2, Bộ Công an chính thức phê duyệt danh sách 288.668 biển số xe ô tô được đưa ra đấu giá.",
+      "isPublished": true,
+      "imageThumbnail": "vpathumbnail20231114081219.png",
+      "lastModificationTime": "2023-11-14T08:19:31.8762189+07:00",
+      "lastModifierId": "4833eb51-6b20-f6be-16b4-3a09a079e435",
+      "creationTime": "2023-11-14T08:12:20.3151673+07:00",
+      "creatorId": "4833eb51-6b20-f6be-16b4-3a09a079e435",
+      "id": "0f207ae0-f345-f62b-af71-3a0edd8fc61a"
+    },
+    {
+      "categoryName": "Tin tức",
+      "imageRepresent": "https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2023/3/17/bien-so-xe-16790378729161515853070.jpg",
+      "title": "Bộ Công an đề xuất cấp và quản lý biển số xe theo mã định danh của chủ xe",
+      "viewCount": 0,
+      "publishDate": "2023-11-14T08:21:16.944395+07:00",
+      "authorName": null,
+      "status": false,
+      "categoriesIds": [ "3ebe84fe-5c7f-1289-21a0-3a0b360f757d" ],
+      "description": "Trong dự thảo thông tư đang được lấy ý kiến, Bộ Công an đề xuất cấp và quản lý biển số xe máy, ô tô theo mã số định danh của chủ xe",
+      "isPublished": true,
+      "imageThumbnail": "d373ad8c-bcb0-4d73-ba52-831898c6fbeethumbnail20231114082620.jpg",
+      "lastModificationTime": "2023-11-14T08:26:20.1766856+07:00",
+      "lastModifierId": "4833eb51-6b20-f6be-16b4-3a09a079e435",
+      "creationTime": "2023-06-06T16:04:43.3221839+07:00",
+      "creatorId": "4833eb51-6b20-f6be-16b4-3a09a079e435",
+      "id": "7f4bb3a3-a9d4-d646-6b74-3a0ba2206539"
+    }
+  ]
+}
