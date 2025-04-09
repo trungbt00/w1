@@ -25,7 +25,7 @@ const Article = () => {
                     </div>
                     <p>Ngày đăng: {event.date}</p>
                     <p>
-                        <h2 class="singular-sapo">(Dân trí) - Trung tướng Vũ Đỗ Anh Dũng, Cục trưởng Cục CSGT cho biết việc xây dựng đề án đấu giá biển số xe là vấn đề mới, thường trực Chính phủ đã họp và Thủ tướng đã kết luận sẽ trình Chính phủ và ra Nghị quyết.</h2>
+                        <h3 class="singular-sapo">(Dân trí) - Trung tướng Vũ Đỗ Anh Dũng, Cục trưởng Cục CSGT cho biết việc xây dựng đề án đấu giá biển số xe là vấn đề mới, thường trực Chính phủ đã họp và Thủ tướng đã kết luận sẽ trình Chính phủ và ra Nghị quyết.</h3>
                         <p>Trả lời báo chí về Đề án đấu giá biển số xe hiện đang được dư luận quan tâm, Trung tướng Vũ Đỗ Anh Dũng, Cục trưởng CSGT Bộ Công an cho biết, vừa qua Thường trực Chính phủ đã họp và Thủ tướng đã kết luận sẽ trình Chính phủ xem xét và ra Nghị quyết.</p>
                         <p>Theo Trung tướng Vũ Đỗ Anh Dũng, sau khi có Nghị quyết thì Thủ tướng xem xét phê duyệt đề án đấu giá biển số.</p>
                         <p>Trung tướng Dũng mong báo chí và nhân dân sẽ tham gia góp ý về vấn đề này bởi đây là vấn đề rất mới.</p>

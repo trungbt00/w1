@@ -14,7 +14,7 @@ const Article = () => {
     return (
         <Container className="mt-5">
             <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 10, offset: 1 }}>
                     <div className="text-center mb-3">
                         <img
                             src={event.image}
@@ -25,7 +25,7 @@ const Article = () => {
                     </div>
                     <p>Ngày đăng: {event.date}</p>
                     <p>
-                        <h2 class="singular-sapo">(Dân trí) - Bộ Công an đề xuất đấu giá trực tuyến biển số ô tô hoàn toàn trên mạng internet; đề nghị đưa vào dự thảo Nghị định quy định về tiêu chí lựa chọn tổ chức đấu giá để áp dụng cho đấu giá biển số xe.</h2>
+                        <h3 class="singular-sapo">(Dân trí) - Bộ Công an đề xuất đấu giá trực tuyến biển số ô tô hoàn toàn trên mạng internet; đề nghị đưa vào dự thảo Nghị định quy định về tiêu chí lựa chọn tổ chức đấu giá để áp dụng cho đấu giá biển số xe.</h3>
                         <p>Ngày 10/1, Bộ Công an đã họp công bố quyết định thành lập Ban soạn thảo và Tổ biên tập xây dựng Nghị định quy định chi tiết một số điều Nghị quyết số 73/2022/QH15 của Quốc hội về thí điểm đấu giá biển số ô tô. Thiếu tướng Nguyễn Văn Long, Thứ trưởng Bộ Công an chủ trì cuộc họp.</p>
                         <p>Tham dự cuộc họp có đại diện lãnh đạo: Cục Cảnh sát giao thông (CSGT), Văn phòng Bộ Công an, một số đơn vị thuộc Bộ Tài Chính, Bộ Tư pháp…</p>
                         <p>Tại cuộc họp, Thiếu tướng Lê Xuân Đức, Phó Cục trưởng Cục CSGT, Bộ Công an đã công bố quyết định của Bộ trưởng Bộ Công an về việc thành lập Ban soạn thảo và Tổ biên tập xây dựng Nghị định quy định chi tiết một số điều Nghị quyết số 73/2022/QH15 của Quốc hội về thí điểm đấu giá biển số xe ô tô.&nbsp;</p>

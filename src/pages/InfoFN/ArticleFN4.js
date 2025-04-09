@@ -14,7 +14,7 @@ const Article = () => {
     return (
         <Container className="mt-5">
             <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 10, offset: 1 }}>
                     <div className="text-center mb-3">
                         <img
                             src={event.image}
