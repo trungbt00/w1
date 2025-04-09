@@ -13,8 +13,8 @@ const Article = () => {
 
     return (
         <Container className="mt-5">
-            <Row className="justify-content-center"> 
-                <Col md={8}>
+            <Row> 
+                <Col md={{ span: 10, offset: 1 }}>
                     <div className="text-center mb-3"> 
                         <img
                             src={event.image}
@@ -25,9 +25,9 @@ const Article = () => {
                     </div>
                     <p>Ngày đăng: {event.date}</p> 
                     <div>
-                        <h2 className="singular-sapo">(Dân trí) - Từ năm 1993, Công an Hải Phòng được giao nghiên cứu, tổ chức thí điểm đăng ký, cấp biển số, thu lệ phí biển số xe tự chọn. 29 năm trước, việc đấu giá biển số xe đã được thực hiện trong 2 tháng...</h2>
+                        <h3 className="singular-sapo">(Dân trí) - Từ năm 1993, Công an Hải Phòng được giao nghiên cứu, tổ chức thí điểm đăng ký, cấp biển số, thu lệ phí biển số xe tự chọn. 29 năm trước, việc đấu giá biển số xe đã được thực hiện trong 2 tháng...</h3>
                         <p>Bộ Tư pháp đang tổ chức thẩm định đề nghị xây dựng Nghị quyết của Quốc hội về thí điểm cấp quyền lựa chọn <a contentEditable="false" href="https://dantri.com.vn/xa-hoi/tai-sao-khong-mo-rong-ap-dung-dau-gia-bien-so-mau-vang-cho-o-to-20220702105549384.htm">sử dụng biển số ô tô thông qua đấu giá.</a> Sau 30 năm, ý tưởng đấu giá biển số xe sắp thành hiện thực?</p>
-                        <p><strong>Gian nan thí điểm đấu giá biển số đẹp</strong></p>
+                        <p>Gian nan thí điểm đấu giá biển số đẹp</p>
                         <p>Theo Bộ Công an, trong xã hội có rất nhiều người có nhu cầu sở hữu biển số xe theo sở thích, thường gọi là "biển số đẹp" tùy theo quan niệm của từng người.</p>
                         <p>Xuất phát từ nhu cầu của người dân, Chính phủ đã hai lần cho phép Bộ Công an tổ chức đấu giá và thu lệ phí cấp biển số tự chọn (năm 1993 và năm 2008).</p>
                         <p>Năm 1993, Bộ Công an đã chỉ đạo Công an TP Hải Phòng nghiên cứu và tổ chức thí điểm đăng ký, cấp biển số, thu lệ phí biển số xe tự chọn. Sau 2 tháng triển khai thực hiện đã có 94 trường hợp tự chọn biển số trên tổng số 198 xe đăng ký (đạt 47%).</p>

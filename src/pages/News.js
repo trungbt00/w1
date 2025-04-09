@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const News = () => {
             .then((data) => {
                 const formattedData = data.items.map((item) => ({
                     id: item.id,
-                    date: new Date(item.publishDate).toISOString().split("T")[0],
+                    date: new Date(item.publishDate).toISOString().split("T")[0], 
                     title: item.title,
                     image: item.imageRepresent,
                 }));

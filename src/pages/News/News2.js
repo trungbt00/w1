@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -12,7 +12,7 @@ const News2 = () => {
             .then((data) => {
                 const formattedData = data.items.map((item) => ({
                     id: item.id,
-                    date: new Date(item.publishDate).toISOString().split("T")[0],
+                    date: new Date(item.publishDate).toISOString().split("T")[0], 
                     title: item.title,
                     image: item.imageRepresent,
                 }));
@@ -29,7 +29,7 @@ const News2 = () => {
     return (
         <Container className="mt-5">
             <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 10, offset: 1 }}>
                     <div className="text-center mb-3">
                         <img
                             src={event.image}
@@ -41,9 +41,9 @@ const News2 = () => {
                     <p>Ngày đăng: {event.date}</p>
                     <p>
                         <h1 class="detail-title article-title" data-role="title">Bộ Công an đề xuất cấp và quản lý biển số xe theo mã định danh của chủ xe</h1>
-                        <h2 class="detail-sapo" data-role="sapo">
+                        <h3 class="detail-sapo" data-role="sapo">
                             Trong dự thảo thông tư đang được lấy ý kiến, Bộ Công an đề xuất cấp và quản lý biển số xe máy, ô tô theo mã số định danh của chủ xe.
-                        </h2>
+                        </h3>
                         <p>Bộ Công an vừa hoàn thành dự thảo thông tư quy định về cấp, thu hồi đăng ký, <a class="link-inline-content" href="https://tuoitre.vn/thi-diem-dau-gia-bien-so-xe-o-to-tu-1-7-2023-2022120108560031.htm" title="Biển số xe" data-rel="follow">biển số xe</a> cơ giới và đăng tải công khai để lấy ý kiến đóng góp của các đơn vị, cá nhân. Dự kiến, thông tư này có hiệu lực từ 1-7, thay thế thông tư 58/2020/TT-BCA.</p>
                         <p>Một trong những nội dung mới được quy định trong dự thảo thông tư, chủ xe là tổ chức, cá nhân có trụ sở, nơi cư trú ở đâu thì <a class="VCCTagItemInNews" data-zoneid="0" data-id="0" href="https://tuoitre.vn/dang-ky-xe.html" target="_blank" title="đăng ký xe">đăng ký xe</a> tại cơ quan đăng ký xe thuộc địa phương đó.</p>
                         <p>Điểm mới đáng chú ý nhất của dự thảo là biển số sẽ được cấp và quản lý theo mã định danh của chủ xe.</p>

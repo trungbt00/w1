@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { auctionEvents } from '../pages/Auction';
 import { featuredNewsData } from '../pages/FeaturedNews';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
     const [latestAuctions, setLatestAuctions] = useState([]);
     const [latestNews, setLatestNews] = useState([]);
     const [categoryNews, setCategoryNews] = useState([]);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const sortedAuctions = [...auctionEvents].sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -30,10 +32,10 @@ const Home = () => {
         <Container className="mt-4">
             <Row>
                 <Col md={3} style={{ backgroundColor: "#FEF7DD" }}>
-                    <div className="text-dark fw-bold text-center " style={{ backgroundColor: "#FEF7DD", padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}> THÔNG TIN ĐẤU GIÁ </div>
+                    <div className="text-dark fw-bold text-center " style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}> {t('auc_info')} </div>
                     <ul className="list-unstyled">
                         {latestAuctions.map((event, index) => (
-                            <li key={index} className="mb-2 d-flex align-items-center justify-content-between" style={{ backgroundColor: "#FEF7DD", padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}>
+                            <li key={index} className="mb-2 d-flex align-items-center justify-content-between" style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}>
                                 <div>
                                     <h6>
                                         <Link to={`/article/${event.id}`} className="text-decoration-none text-dark">
@@ -91,7 +93,7 @@ const Home = () => {
                                         <span>{new Date(news.publishDate).toLocaleDateString()}</span>
                                         <Link to={`/category/3ebe84fe-5c7f-1289-21a0-3a0b360f757d`}
                                             className="text-decoration-none text-primary">
-                                            Tin tức
+                                            {t('news')}
                                         </Link>
                                         <span style={{ visibility: 'hidden' }}>Placeholder</span>
                                     </small>
@@ -101,7 +103,7 @@ const Home = () => {
                     </ul>
                 </Col>
                 <Col md={3}>
-                    <div className="text-dark fw-bold text-center " style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}> TIN NỔI BẬT </div>
+                    <div className="text-dark fw-bold text-center " style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}> {t('featured_n')} </div>
                     <ul className="list-unstyled">
                         {latestNews.map((news, index) => (
                             <li key={index} className="mb-2" style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}>

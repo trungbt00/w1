@@ -14,7 +14,7 @@ const Article = () => {
     return (
         <Container className="mt-5">
             <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 10, offset: 1 }}>
                     <div className="text-center mb-3">
                         <img
                             src={event.image}
@@ -26,7 +26,7 @@ const Article = () => {
                     <p>Ngày đăng: {event.date}</p>
                     <p>
                         <h1 class="title-page detail">Bộ Công an đề xuất quy định liên quan đấu giá biển số xe</h1>
-                        <h2 class="singular-sapo">(Dân trí) - Bộ Công an đề xuất số tiền thu được từ đấu giá biển số xe sau khi trừ các khoản chi phí tổ chức đấu giá, chi phí quảng cáo, chi phí quản trị hệ thống đấu giá và chi phí khác, được nộp vào ngân sách.</h2>
+                        <h3 class="singular-sapo">(Dân trí) - Bộ Công an đề xuất số tiền thu được từ đấu giá biển số xe sau khi trừ các khoản chi phí tổ chức đấu giá, chi phí quảng cáo, chi phí quản trị hệ thống đấu giá và chi phí khác, được nộp vào ngân sách.</h3>
                         <p>Trong dự án Luật Trật tự an toàn giao thông đường bộ cập nhật ngày 10/4, Bộ Công an đề xuất 21 Điều trong Chương III, quy định về Phương tiện giao thông đường bộ.</p>
                         <p>Trong đó, Điều 37 quy định về đấu giá biển số xe. Cụ thể, Bộ Công an đề xuất biển số xe đưa ra đấu giá là số biển số xe ô tô, xe mô tô, xe gắn máy.</p>
                         <p>Giá khởi điểm của một biển số ô tô đưa ra đấu giá không thấp hơn 40 triệu; giá khởi điểm một biển số xe mô tô, xe gắn máy đưa ra đấu giá không thấp hơn 5 triệu. Căn cứ điều kiện kinh tế xã hội trong từng thời kỳ, Chính phủ quyết định cụ thể giá khởi điểm của loại biển số xe đưa ra đấu giá.</p>

@@ -23,8 +23,16 @@ import ArticleFN4 from './pages/InfoFN/ArticleFN4';
 import ArticleFN5 from './pages/InfoFN/ArticleFN5';
 import News1 from './pages/News/News1';
 import News2 from './pages/News/News2';
-
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import i18n from './i18n';
 function App() {
+    const language = useSelector((state) => state.language.language);
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+    }, [language]);
+
     return (
         <Router>
             <NavigationBar />

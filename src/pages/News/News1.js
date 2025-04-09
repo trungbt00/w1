@@ -29,7 +29,7 @@ const Article = () => {
     return (
         <Container className="mt-5">
             <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 10, offset: 1 }}>
                     <div className="text-center mb-3">
                         <img
                             src={event.image}
@@ -41,7 +41,7 @@ const Article = () => {
                     <p>Ngày đăng: {event.date}</p>
                     <p>
                         <h1 class="detail-title" data-role="title">Sẽ có gần 290 nghìn biển số xe ô tô trong đợt đấu giá lần 2</h1>
-                        <h2 class="detail-sapo" data-role="sapo">SKĐS - Trong phiên đấu giá biển số xe ô tô lần 2, Bộ Công an chính thức phê duyệt danh sách 288.668 biển số xe ô tô được đưa ra đấu giá.</h2>
+                        <h3 class="detail-sapo" data-role="sapo">SKĐS - Trong phiên đấu giá biển số xe ô tô lần 2, Bộ Công an chính thức phê duyệt danh sách 288.668 biển số xe ô tô được đưa ra đấu giá.</h3>
                         <p>Cục Cảnh sát giao thông (CSGT) chính thức thông báo về việc tổ chức phiên đấu giá biển số xe ô tô lần 2 theo Quyết định Số: 4653/QĐ-BCA-CSGT của Bộ Công An.</p>
                         <p>Theo đó, phiên đấu giá lần 2 sẽ có sự xuất hiện của 288.668 biển số ô tô tại 63 tỉnh thành, danh sách biển số được đưa ra đấu giá trực tuyến sẽ công bố trên cổng thông tin đấu giá trực tuyến trong thời gian tới.</p>
                         <p>Theo thống kê, các biển số đến từ Hà Nội và thành phố Hồ Chí Minh vẫn sẽ chiếm đa số (lần lượt là 49.689 và 41.989 biển số xe) trong phiên đấu giá lần 2, trong khi đó các biển số đến từ Bạc Liêu, Bắc Kạn, Điện Biên, Lai Châu chiếm thiểu số với chỉ dưới 1.000 biển.</p>
