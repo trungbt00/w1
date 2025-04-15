@@ -28,7 +28,6 @@ const Auction = () => {
     useEffect(() => {
         setLoading(true);
 
-        // Clear timeout nếu người dùng vẫn đang gõ
         if (debounceTimeout.current) clearTimeout(debounceTimeout.current);
 
         debounceTimeout.current = setTimeout(() => {
