@@ -12,33 +12,37 @@ const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const { t } = useTranslation();
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         const validUser = [
-        {
-            email: "user@example.com",
-            password: "123456",
-            name: "Nguyen Van A",
-            phonenumber: "0123456789",
-            id: "1"
-        },
-        {
-            email: "admin@example.com",
-            password: "admin123",
-            name: "Admin User",
-            phonenumber: "0987654321",
-            id: "2"
-        },
-        {
-            email: "guest@example.com",
-            password: "guestpass",
-            name: "Guest User",
-            phonenumber: "0999999999",
-            id: "3"
-        }
-    ];
+            {
+                email: "user@example.com",
+                password: "123456",
+                name: "Nguyen Van A",
+                phonenumber: "0123456789",
+                id: "1",
+                permissions: ['hoTroKhachHang', 'DangKyGiaHan']
+            },
+            {
+                email: "admin@example.com",
+                password: "admin123",
+                name: "Admin User",
+                phonenumber: "0987654321",
+                id: "2",
+                permissions: ['hoTroKhachHang', 'DangKyGiaHan', 'giayToPhapLy','admin']
+            },
+            {
+                email: "guest@example.com",
+                password: "guestpass",
+                name: "Guest User",
+                phonenumber: "0999999999",
+                id: "3",
+                permissions: ['giayToPhapLy']
+            }
+        ];
 
 
             const foundUser = validUser.find(
@@ -50,7 +54,8 @@ const Login = () => {
                     email: foundUser.email,
                     name: foundUser.name,
                     phonenumber: foundUser.phonenumber,
-                    id: foundUser.id
+                    id: foundUser.id,
+                    permissions: foundUser.permissions
                 }));
                 navigate("/home");
             } else {
@@ -81,14 +86,23 @@ const Login = () => {
                         <div className="form-group row">
                             <label htmlFor="inputPassword3" className="col-sm-3 col-form-label text-md-end">{t('password')}</label>
                             <div className="col-sm-7">
-                                <input
-                                    type="password"
-                                    className="form-control"
-                                    id="inputPassword3"
-                                    placeholder={t('password')}
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                />
+                                <div className="input-group">
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        className="form-control"
+                                        id="inputPassword3"
+                                        placeholder={t('password')}
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
+                                    />
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-secondary"
+                                        onClick={() => setShowPassword(!showPassword)}
+                                    >
+                                        {showPassword ? "Ẩn" : "Hiện"}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div className="form-group row">

@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import Header from './Header';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 
 const NavigationBar = () => {
     const [categories, setCategories] = useState([]);
@@ -14,6 +15,9 @@ const NavigationBar = () => {
         "Tin nổi bật": "featured",
         "Hướng dẫn": "guide"
     };
+
+    const permissions = useSelector(state => state.auth.userPermissions);
+
 
     useEffect(() => {
         fetch('/categoies.json')
@@ -43,9 +47,15 @@ const NavigationBar = () => {
                                 ))}
                             </NavDropdown>
                             <NavLink to="/History" className="nav-link">{t('auction_history')}</NavLink>
-                            <NavLink to="/Support" className="nav-link">{t('customer_support')}</NavLink>
-                            <NavLink to="/Register" className="nav-link">{t('extension')}</NavLink>
-                            <NavLink to="/Contact" className="nav-link">{t('legal_papers')}</NavLink>
+                            {permissions.includes('DangKyGiaHan') && (
+                                <NavLink to="/Register" className="nav-link">{t('extension')}</NavLink>
+                            )}
+                            {permissions.includes('hoTroKhachHang') && (
+                                <NavLink to="/Support" className="nav-link">{t('customer_support')}</NavLink>
+                            )}
+                            {permissions.includes('giayToPhapLy') && (
+                                <NavLink to="/Legal" className="nav-link">{t('legal_papers')}</NavLink>
+                            )}
                             <NavLink to="/Profile" className="nav-link">{t('profile')}</NavLink>
                         </Nav>
                     </Navbar.Collapse>

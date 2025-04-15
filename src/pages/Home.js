@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { auctionEvents } from '../pages/Auction';
 import { featuredNewsData } from '../pages/FeaturedNews';
 import { useTranslation } from 'react-i18next';
+import '../App.css';
 
 const Home = () => {
     const [latestAuctions, setLatestAuctions] = useState([]);
@@ -30,8 +31,8 @@ const Home = () => {
 
     return (
         <Container className="mt-4">
-            <Row>
-                <Col md={3} style={{ backgroundColor: "#FEF7DD" }}>
+            <Row className="d-flex flex-wrap">
+                <Col md={3} style={{ backgroundColor: "#FEF7DD" }} id="col-1">
                     <div className="text-dark fw-bold text-center " style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}> {t('auc_info')} </div>
                     <ul className="list-unstyled">
                         {latestAuctions.map((event, index) => (
@@ -69,7 +70,7 @@ const Home = () => {
                         ))}
                     </ul>
                 </Col>
-                <Col md={6}>
+                <Col md={6} id="col-2">
                     <ul className="list-unstyled">
                         {categoryNews.map((news, index) => (
                             <li key={index} className="d-flex" style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', alignItems: 'center' }}>
@@ -102,7 +103,7 @@ const Home = () => {
                         ))}
                     </ul>
                 </Col>
-                <Col md={3}>
+                <Col md={3} id="col-3">
                     <div className="text-dark fw-bold text-center " style={{ padding: '0.5rem 1rem', borderBottom: '1px solid #ccc', marginBottom: '0' }}> {t('featured_n')} </div>
                     <ul className="list-unstyled">
                         {latestNews.map((news, index) => (

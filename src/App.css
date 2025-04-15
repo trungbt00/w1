@@ -1,14 +1,14 @@
 ﻿@media (max-width: 768px) {
-    .list-unstyled li > div > div {
-        width: 60px !important;
-        height: 45px !important;
+    #col-1 {
+        order: 2;
+    }
+
+    #col-2 {
+        order: 1;
+    }
+
+    #col-3 {
+        order: 3;
     }
 }
 
-@media (max-width: 576px) {
-    .list-unstyled li > div > div {
-        width: 50px !important;
-        height: 38px !important;
-        marginLeft: '8px';
-    }
-}
